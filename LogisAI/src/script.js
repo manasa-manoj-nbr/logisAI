@@ -56,7 +56,9 @@ document.addEventListener("DOMContentLoaded", () => {
             throw new Error("Failed to generate response. Please try again later!");
         }
         const data = await response.json();
-        return data.candidates[0].content.parts[0].text;
+        const text = data.candidates[0].content.parts[0].text;
+        const formattedText = formatBoldText(text)
+        return formattedText;
     };
 
     function addMessage(text,isUser) {
@@ -94,4 +96,11 @@ document.addEventListener("DOMContentLoaded", () => {
         chatMessages.appendChild(error);
         return error;
     }
+
+    function formatBoldText(responseText) {
+        responseText = responseText.replace(/\*\s\*\*(.*?)\*\*/g, "<br><b>$1</b>");
+        responseText = responseText.replace(/\*\*(.*?)\*\*/g, "<b>$1</b>");
+        return responseText;
+    }
+    
 });
