@@ -22,24 +22,10 @@ Logis AI is a chatbot built using Google's Gemini API. Designed to provide seaml
 1. Clone the Repository:
 
    ```bash
-   git clone https://github.com/your-username/logis-ai.git
-   cd logis-ai
+   git clone https://github.com/manasa-manoj-nbr/logisAI.git
+   cd logisAI
    ```
-
-2. Configure the API Key:
-
-   - Create a `.env` file in the project root.
-   - Add your Gemini API key:
-
-     ```env
-     GEMINI_API_KEY=your_api_key_here
-     ```
-
 3. Run the Application:
 
    - Open the `index.html` file in your browser.
-   - Alternatively, use a local server:
 
-     ```bash
-     npx live-server
-     ```
