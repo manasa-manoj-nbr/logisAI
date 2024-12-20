@@ -1,4 +1,4 @@
-# Logis AI - Your Intelligent Chat Companion 🤖
+# 🤖 LogisAI
 
 Logis AI is a chatbot built using Google's Gemini API. Designed to provide seamless and natural conversations, it leverages advanced AI capabilities for an exceptional user experience. With a modern interface powered by JavaScript, Tailwind CSS, and HTML, Logis AI is fast, responsive, and highly customizable.
 
