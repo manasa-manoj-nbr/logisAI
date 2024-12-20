@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function formatBoldText(responseText) {
-        responseText = responseText.replace(/\*\s\*\*(.*?)\*\*/g, "<br><b>$1</b>");
+        responseText = responseText.replace(/\*\s\*\*(.*?)\*\*/g, "<br><br><b>$1</b>");
         responseText = responseText.replace(/\*\*(.*?)\*\*/g, "<b>$1</b>");
         return responseText;
     }
